@@ -1,0 +1,144 @@
+# Git Bare Repo for dotfiles (https://news.ycombinator.com/item?id=11070797 / 11071754)
+alias config="/usr/bin/git --git-dir=/home/rspk/.cfg/ --work-tree=/home/rspk"
+alias cst="config status"
+alias cc="config commit"
+alias cpp="config push"
+
+# case-insensitive ripgrep on 42/ directory e.g. rgg keepass
+alias rgg="cd ~/Projects/personal/github/42; rg -S "
+alias rgn="cd ~/Projects/personal/github/notes/docs; rg -S "
+
+# vpn
+alias pvpn="sudo protonvpn c"
+alias dvpn="sudo protonvpn d"
+
+# dns
+alias dns="sudo nvim /etc/resolv.conf"
+
+# python
+alias vact="source ./venv/bin/activate"
+
+# tmux
+alias ta="tmux attach -t"
+alias tad="tmux attach -d -t"
+alias ts="tmux new-session -s"
+alias tl="tmux list-sessions"
+alias tksv="tmux kill-server"
+alias tkss="tmux kill-session -t"
+
+# config files
+alias xinitconfig="nvim ~/.xinitrc"
+alias xprofileconfig="nvim ~/.xprofile"
+
+alias tmuxconfig="nvim ~/.tmux.conf"
+
+alias nvimconfig="nvim ~/.config/nvim/init.vim"
+alias vimconfig="nvim ~/.vimrc"
+# alias emacsconfig
+
+alias urxvtconfig="nvim ~/.Xresources"
+alias urxvtperls="cd /usr/lib/x86_64-linux-gnu/urxvt/perl"
+alias xup="xrdb ~/.Xresources"
+alias alaconfig="nvim ~/.config/alacritty/alacritty.yml"
+alias termiteconfig="nvim ~/.config/termite/config"
+
+alias zshconfig="nvim ~/.zshrc"
+alias ohmyzsh="cd ~/.oh-my-zsh;ranger"
+alias bashconfig="nvim ~/.bashrc"
+alias fishconfig="cd ~/.config/fish;ranger"
+
+alias i3config="nvim ~/.config/i3/config"
+alias polybarconfig="nvim ~/.config/polybar/config"
+alias i3bconfig="nvim ~/.config/i3/i3blocks.conf"
+
+alias xmonadconfig="nvim ~/.xmonad/xmonad.hs"
+alias xmobarconfig="nvim ~/.config/xmobar/xmobarrc"
+
+alias sxconfig="nvim ~/.config/sxhkd/sxhkdrc"
+alias bspconfig="nvim ~/.config/bspwm/bspwmrc"
+
+alias dwmconfig="nvim ~/.suckless/dwm-6.2/config.h"
+alias dwmstatconfig="nvim ~/.suckless/dwmstatus/dwmstatus.c"
+alias slconfig="nvim ~/.suckless/slstatus/config.h"
+alias stconfig="nvim ~/.suckless/st-0.8.2/config.h"
+alias dmenuconfig="nvim ~/.suckless/dmenu/config.h"
+alias surfconfig="nvim ~/.suckless/surf-2.0/config.h"
+alias slockconfig="nvim ~/.suckless/slock-1.4/config.h"
+alias sentconfig="nvim ~/.suckless/sent-1/config.h"
+alias tabbedconfig="nvim ~/.suckless/tabbed/config.h"
+
+alias irssiconfig="nvim ~/.irssi/config"
+alias weechatconfig="nvim ~/.weechat/;ranger"
+
+alias muttconfig="nvim ~/.mutt/muttrc"
+alias neomuttconfig="nvim ~/.neomutt/neomuttrc"
+
+alias zathuraconfig="nvim ~/.config/zathura/zathura"
+alias qbconfig="nvim ~/.config/qutebrowser/config.py"
+alias roficonfig="nvim ~/.config/rofi/config"
+alias neofetchconfig="nvim ~/.config/neofetch/config.conf"
+alias rangerconfig="nvim ~/.config/ranger"
+alias newsboatconfig="nvim ~/.config/newsboat/urls"
+alias casteroconfig="nvim ~/.config/castero/castero.conf"
+alias comptonconfig="nvim ~/.config/compton/compton.conf"
+alias conkyconfig="nvim ~/.config/conky/conky.conf"
+alias brootconfig="nvim ~/.config/broot/conf.toml"
+alias dunstconfig="nvim ~/.config/dunst/dunstrc"
+alias jrnlconfig="nvim ~/.config/jrnl/jrnl.yaml"
+alias powerlineconfig="cd ~/.config/powerline;ranger"
+
+# Miscellaneous
+alias brc="nvim ~/.bashrc && source ~/.bashrc"
+alias zrc="nvim ~/.zshrc && source ~/.zshrc"
+
+# utilities
+alias df="df -h"
+alias free="free -h"
+alias today="date +'%Y-%m-%d'"
+alias unix="date '+%s'"
+# stopwatch
+alias stopw="time (read)"
+# suckless slock
+# alias slo="slock -m 'Locked at $(date "+%a %d, %H:%M:%S")'"
+
+# git
+alias gsrt="git shortlog"
+
+# ls
+alias ll="ls -alh --color=auto --group-directories-first"
+alias la="ls -ah --color=auto --group-directories-first"
+alias ld="ls -lh --color=auto --group-directories-first"
+alias lr="ls -R --color=auto --group-directories-first"
+alias lt="ls -LR --color=auto --group-directories-first"
+
+# exa (https://github.com/ogham/exa) 
+alias ell="exa -al --color=always --group-directories-first"
+alias ela="exa -a --color=always --group-directories-first"
+alias eld="exa -l --color=always --group-directories-first"
+alias elr="exa -T --color=always --group-directories-first" # recursively list files(similar to tree)
+
+# Broot (https://github.com/Canop/broot)
+alias brh="br -hpd"
+alias brs="br -hpds"
+
+# Navigation
+alias ..="cd .."
+alias ...="cd ../.."
+
+# Miscellaneous
+alias ka="killall"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -v" 
+alias mkd="mkdir -pv" 
+alias yt="youtube-dl --add-metadata -i"
+alias t="~/todo.txt-cli/todo.sh"
+
+# Personal aliases
+alias pp="cd ~/Projects/personal/github"
+alias 42="cd ~/Projects/personal/github/42/;nvim ./"
+alias notes="cd ~/Projects/personal/github/notes/docs;nvim ./"
+alias www="cd ~/Projects/personal/github/www;nvim ./"
+alias c42="cd ~/Projects/personal/github/42/;codium ./"
+alias cnotes="cd ~/Projects/personal/github/notes;codium ./"
+alias cwww="cd ~/Projects/personal/github/www;codium ./"

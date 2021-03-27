@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Postman
+GenericName=Postman
+Exec=/opt/Postman-linux-x64-7.11.0/Postman/app/_Postman
+Terminal=false
+Type=Application
+Categories=Application;
+Comment=Postman Client.
